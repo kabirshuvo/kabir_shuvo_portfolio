@@ -252,6 +252,10 @@ nav ul li a:hover::after {
   border-radius: 25%;
   text-decoration: none;
   color: #ababab;
+  transition: 0.5s;
+}
+.btn:hover {
+  transform: scale(1.05);
 }
 
 /* Media Querry */
