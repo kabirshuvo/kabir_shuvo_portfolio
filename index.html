@@ -30,6 +30,98 @@
           </ul>
         </nav>
       </div>
+      <div class="hero-text container">
+        <h3>This Is My Portfolio</h3>
+        <p>Looking for a great team to work with.</p>
+      </div>
     </header>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/KabirShuvo.ico" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              The Word describes me best is <br />
+              ' I'm a Goal Setter '.
+            </p>
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('projects')">Projects</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>React web app developer</span><br />Developing Modern
+                  Web/App Interfaces
+                </li>
+                <li>
+                  <span>SEO</span><br />Building Crawlable Website With
+                  Nextjs-13.4
+                </li>
+                <li>
+                  <span>UI/UX Designer</span><br />Designing Modern Web/App
+                  Interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+              <ul>
+                <li>
+                  <span>MERN Stack Project</span><br />Summer School Projects
+                </li>
+                <li><span>MERN Project</span><br />A Complete Web app On</li>
+                <li>
+                  <span>UI/UX Designer</span><br />Designing Modern Web/App
+                  Interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>React web app developer</span><br />Developing Modern
+                  Web/App Interfaces
+                </li>
+                <li>
+                  <span>SEO</span><br />Building Crawlable Website With
+                  Nextjs-13.4
+                </li>
+                <li>
+                  <span>UI/UX Designer</span><br />Designing Modern Web/App
+                  Interfaces
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let tabLinks = document.getElementsByClassName("tab-links");
+      let tabContents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tabLink of tabLinks) {
+          tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+          tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        event.currentTarget.classList.add("active-tab");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
   </body>
 </html>

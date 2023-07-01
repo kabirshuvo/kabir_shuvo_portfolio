@@ -43,7 +43,9 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: #31a8ff;
+  /* color: #31a8ff; */
+  /* color: #001e36; */
+  color: #ffffff;
   font-size: 1rem;
   position: relative;
 }
@@ -52,7 +54,8 @@ nav ul li a::after {
   content: "";
   width: 0;
   height: 3px;
-  background: #001e36;
+  /* background: #001e36; */
+  background: #31a8ff;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -60,6 +63,74 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
   width: 100%;
+}
+.hero-text {
+  margin-top: 16%;
+  font-size: 2rem;
+}
+#about {
+  padding: 5rem 0;
+  color: #ababab;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-col-1 {
+  flex-basis: 35%;
+}
+.about-col-1 img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+}
+.sub-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+.tab-title {
+  display: flex;
+  margin: 1rem 0 40px;
+}
+.tab-links {
+  margin-right: 3rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #31a8ff;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.4s;
+}
+.tab-links.active-link::after {
+  width: 60%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #31a8ff;
+  font-size: 0.7rem;
+}
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
