@@ -176,6 +176,72 @@ nav ul li a:hover::after {
   color: #001e36;
   /* color: #31a8ff; */
 }
+
+/* --------Portfilio-------- */
+#portfolio {
+  padding: 3rem 0;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2.5rem;
+  margin-top: 3rem;
+}
+.work {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.work img {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), #001e36);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  text-align: center;
+  transition: height 0.4s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.layer p {
+  font-size: 0.8rem;
+}
+.layer a {
+  margin-top: 1rem;
+  color: #31a8ff;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 3rem;
+  background: #fff;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  text-align: center;
+}
+.work:hover img {
+  transform: scale(1.05);
+}
+.work:hover .layer {
+  height: 100%;
+}
+
 /* Media Querry */
 @media screen and (max-width: 768px) {
 }
