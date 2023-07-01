@@ -248,14 +248,63 @@ nav ul li a:hover::after {
   margin: 3rem auto;
   width: fit-content;
   border: 0.25px solid #31a8ff;
-  padding: 0.1rem 0.5rem;
+  padding: 0.3rem 1rem;
   border-radius: 25%;
   text-decoration: none;
   color: #ababab;
-  transition: 0.5s;
+  transition: 0.3s;
+  font-size: 0.7rem;
 }
 .btn:hover {
   transform: scale(1.05);
+}
+/* ---Contacts---- */
+
+.contacts-left {
+  flex-basis: 35%;
+}
+.contacts-p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contacts-p i {
+  margin-right: 1rem;
+}
+.social-icons a {
+  color: #fff;
+  margin-top: 3rem;
+
+  font-size: 1.4rem;
+  margin-right: 1rem;
+
+  transition: ease-in-out 0.4s;
+}
+.social-icons a:hover {
+  color: #31a8ff;
+  /* transform: translateY(-5px); */
+}
+.contacts-right {
+  flex-basis: 60%;
+}
+.gap {
+  margin-top: 2rem;
+}
+.btn-2 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: #31a8ff;
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+  color: #18152e;
+  font-weight: 700;
+}
+.btn-2:hover {
+  color: #fff;
+  background: #001e36;
+  font-size: 1rem;
 }
 
 /* Media Querry */
