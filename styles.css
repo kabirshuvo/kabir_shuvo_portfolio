@@ -242,6 +242,18 @@ nav ul li a:hover::after {
   height: 100%;
 }
 
+/* BTN */
+.btn {
+  display: block;
+  margin: 3rem auto;
+  width: fit-content;
+  border: 0.25px solid #31a8ff;
+  padding: 0.1rem 0.5rem;
+  border-radius: 25%;
+  text-decoration: none;
+  color: #ababab;
+}
+
 /* Media Querry */
 @media screen and (max-width: 768px) {
 }
