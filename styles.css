@@ -23,6 +23,9 @@ html {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #project-header {
@@ -46,9 +49,9 @@ html {
 #hero {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: start;
+  align-items: flex-start;
+  text-align: left;
 }
 #hero .animated-text {
   margin-top: 3rem;
@@ -358,7 +361,6 @@ nav ul li a:hover::after {
 .btn-2:hover {
   color: #fff;
   background: #001e36;
-  font-size: 0.8rem;
 }
 
 .contacts-right form {
@@ -442,7 +444,7 @@ nav .fas {
     margin-left: 4%;
   }
   #hero h3 {
-    margin-top: 40%;
+    margin-top: 4%;
     font-size: 1rem;
     margin-bottom: 1rem;
   }

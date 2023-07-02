@@ -1,7 +1,7 @@
 const animatedText = document.querySelector(".animated-text")
 
 
-const theBestMe = ["A GOAL SETTER.", "A Father.", "Programer."]
+const theBestMe = ["A GOAL SETTER", "A Father...", "A Programer"]
 
 let theBestMeIndex = 0;
 let characterIndex = 0;
@@ -12,7 +12,7 @@ updatetheBestMeText()
 function updatetheBestMeText(){
     characterIndex++
     animatedText.innerHTML = `
-    <h1>'${theBestMe[theBestMeIndex].slice(0, characterIndex)}'.</h1>
+    <h1>${theBestMe[theBestMeIndex].slice(0, characterIndex)}</h1>
     `;
     if(characterIndex === theBestMe[theBestMeIndex].length){
         theBestMeIndex++
