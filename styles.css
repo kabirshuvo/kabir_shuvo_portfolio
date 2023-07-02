@@ -19,19 +19,70 @@ html {
 #header {
   width: 100%;
   height: 100vh;
-  /* background-image: url(images/hero-bg.png); */
-  background-size: cover;
+  background-image: url(images/hero-bg.png);
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+#project-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/project_banner.png);
+  background-size: contain;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  position: relative;
+}
+#project-header background-image {
+  position: absolute;
+}
+#project-header h3 {
+  margin-top: 1%;
+  font-size: 3rem;
+  text-align: center;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero .animated-text {
+  margin-top: 3rem;
+}
+#hero h3 {
+  color: #31a8ff;
+  margin-top: 20%;
+  font-size: 2rem;
+}
+#hero h2 {
+  color: #31a8ff;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+#hero p {
+  color: #001e36;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+#hero a {
+  margin-top: 3rem;
 }
 
 .container {
-  padding: 10px 10%;
+  padding: 0px 10%;
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  top: 0;
+  z-index: 999;
+  position: sticky;
 }
 
 .logo {
@@ -67,10 +118,10 @@ nav ul li a::after {
 nav ul li a:hover::after {
   width: 100%;
 }
-.hero-text {
+/* .hero-text {
   margin-top: 16%;
   font-size: 2rem;
-}
+} */
 #about {
   padding: 5rem 0;
   color: #ababab;
@@ -94,7 +145,7 @@ nav ul li a:hover::after {
 .sub-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #fff;
+  color: #31a8ff;
 }
 .tab-title {
   display: flex;
@@ -377,6 +428,36 @@ nav .fas {
     left: 25px;
     cursor: pointer;
   }
+
+  #header {
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/hero-bg.png);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  #hero h2 {
+    font-size: 1rem;
+    margin-left: 4%;
+  }
+  #hero h3 {
+    margin-top: 40%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  #hero a {
+    margin-top: 27%;
+  }
+
   .sub-title {
     font-size: 2rem;
   }
