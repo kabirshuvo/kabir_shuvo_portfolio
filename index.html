@@ -22,13 +22,15 @@
       <div class="container">
         <nav>
           <img class="logo" src="images/kabir_shuvo_logo.jpg" alt="" />
-          <ul>
+          <ul id="sideMenu">
             <li><a href="#"> Home</a></li>
             <li><a href="#"> About</a></li>
             <li><a href="#"> Skills</a></li>
             <li><a href="#"> Portfolio</a></li>
             <li><a href="#"> Contact</a></li>
+            <i onclick="closeMenu()" class="fas fa-times"></i>
           </ul>
+          <i onclick="openMenu()" class="fas fa-bars"></i>
         </nav>
       </div>
       <div class="hero-text container">
@@ -261,6 +263,15 @@
         event.currentTarget.classList.add("active-link");
         event.currentTarget.classList.add("active-tab");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      let sideMenu = document.getElementById("sideMenu");
+      function openMenu() {
+        sideMenu.style.left = "0";
+      }
+      function closeMenu() {
+        sideMenu.style.left = "-220px";
       }
     </script>
   </body>

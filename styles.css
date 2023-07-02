@@ -333,5 +333,61 @@ form textarea {
 }
 
 /* Media Querry */
-@media screen and (max-width: 768px) {
+
+nav .fas {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  nav .fas {
+    display: block;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    background: #001e36;
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 220px;
+    height: 100vh;
+    padding-top: 3rem;
+    z-index: 10;
+    transition: left 0.4s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1.5rem;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  .sub-title {
+    font-size: 2rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: 2rem;
+  }
+  .tab-links {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+  }
+
+  .contacts-left,
+  .contacts-right {
+    flex-basis: 100%;
+  }
+  .contacts-left {
+    margin-bottom: 2rem;
+  }
 }
