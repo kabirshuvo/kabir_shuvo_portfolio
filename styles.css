@@ -277,11 +277,11 @@ nav ul li a:hover::after {
   font-size: 1.4rem;
   margin-right: 1rem;
 
-  transition: ease-in-out 0.4s;
+  transition: transform 0.5s;
 }
 .social-icons a:hover {
   color: #31a8ff;
-  /* transform: translateY(-5px); */
+  transform: translateY(-5px);
 }
 .contacts-right {
   flex-basis: 60%;
@@ -305,6 +305,31 @@ nav ul li a:hover::after {
   color: #fff;
   background: #001e36;
   font-size: 0.8rem;
+}
+
+.contacts-right form {
+  width: 100%;
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #001e36;
+  padding: 1rem;
+  margin: 0 0 1rem;
+  color: #31a8ff;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  background: #18152e;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 /* Media Querry */
