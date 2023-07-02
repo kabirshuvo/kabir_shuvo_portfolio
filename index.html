@@ -23,11 +23,11 @@
         <nav>
           <img class="logo" src="images/kabir_shuvo_logo.jpg" alt="" />
           <ul id="sideMenu">
-            <li><a href="#"> Home</a></li>
-            <li><a href="#"> About</a></li>
-            <li><a href="#"> Skills</a></li>
-            <li><a href="#"> Portfolio</a></li>
-            <li><a href="#"> Contact</a></li>
+            <li><a href="#header"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#services"> Skills</a></li>
+            <li><a href="#portfolio"> Portfolio</a></li>
+            <li><a href="#contacts"> Contact</a></li>
             <i onclick="closeMenu()" class="fas fa-times"></i>
           </ul>
           <i onclick="openMenu()" class="fas fa-bars"></i>
@@ -217,26 +217,28 @@
             >
           </div>
           <div class="contacts-right">
-            <form>
+            <form name="submit-to-google-sheet">
               <input
                 type="text"
-                name="name"
+                name="Name"
                 placeholder="Your Name here"
                 required
               />
               <br />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Your Email Please"
                 required
               />
               <br />
               <textarea
-                name="message"
+                name="Message"
                 rows="7"
                 placeholder="Your Message Here"
               ></textarea>
+              <br />
+              <span id="message"></span>
               <br />
               <button class="btn-2" type="submit">Send Message</button>
             </form>
@@ -273,6 +275,27 @@
       function closeMenu() {
         sideMenu.style.left = "-220px";
       }
+    </script>
+
+    <!-- Contacts Message Script -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxAYD2zi1w_iUCTyIODwLKkuKlAAVKIwXYHDFx00QM4lqxPrMp_vpjptsQastVMQdyGUQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const message = document.getElementById("message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            message.innerHTML = " Messange Sent Successfully";
+            setTimeout(function () {
+              message.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>

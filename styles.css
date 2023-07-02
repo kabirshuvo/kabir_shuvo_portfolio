@@ -12,6 +12,9 @@ body {
   color: #31a8ff;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 #header {
   width: 100%;
@@ -330,6 +333,14 @@ form textarea {
   font-weight: 400;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+/* Success Message */
+
+#message {
+  color: #1919;
+  margin-top: -1rem;
+  display: block;
 }
 
 /* Media Querry */
