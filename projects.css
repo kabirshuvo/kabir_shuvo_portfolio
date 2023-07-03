@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #18152e;
+  color: #31a8ff;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#project-header {
+  width: 100%;
+  /* height: 100vh; */
+  background-image: url(images/project_banner.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* position: relative; */
+}
+
+#project-header h3 {
+  margin-top: 1%;
+  font-size: 2rem;
+  text-align: center;
+}
+.project-after-text {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.github-repo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.github-repo-link a {
+  color: #31a8ff;
+}
+.github-repo-link a i {
+  margin-right: 0.3rem;
+  margin-bottom: 5rem;
+}
+
+/* Single Product page css */
+#product-details {
+  display: flex;
+  margin: 5% 0;
+}
+#product-details .single-products-main-image {
+  width: 40%;
+  margin-right: 3rem;
+}
+.small-image-group {
+  display: flex;
+  justify-content: space-between;
+}
+.small-image-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#product-details .single-product-details {
+  width: 50%;
+  padding: 1rem;
+}
+#product-details .single-product-details h5 {
+  padding: 2rem 0 1rem 0;
+  color: #ababab;
+}
+#product-details .single-product-details h3 {
+  font-size: 2rem;
+}
+#product-details .single-product-details span {
+  line-height: 2rem;
+}
+#product-details .single-product-details button {
+  margin: 3rem 0;
+}
+
+/* _______media query________ */
+
+@media only screen and (max-width: 768px) {
+  #project-header h3 {
+    margin-bottom: 5rem;
+  }
+  #product-details {
+    flex-direction: column;
+  }
+  #product-details .single-products-main-image {
+    width: 100%;
+  }
+  #product-details .single-product-details {
+    width: 100%;
+  }
+}

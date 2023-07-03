@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/eye.svg" type="image/png" />
+    <title>Kabir_Shuvo_portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="projects.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <nav class="container">
+      <a href="index.html"
+        ><img class="logo" src="images/kabir_shuvo_logo.jpg" alt=""
+      /></a>
+      <ul id="sideMenu">
+        <li><a href="#header"> Home</a></li>
+        <li><a href="#about"> About</a></li>
+        <li><a href="#services"> Skills</a></li>
+        <li><a href="#portfolio"> Portfolio</a></li>
+        <li><a href="#contacts"> Contact</a></li>
+        <li>
+          <div class="gap"></div>
+          <a href="images/Resume-of-kabir-shuvo.pdf" download class="btn-2"
+            >Download Resume</a
+          >
+        </li>
+        <i onclick="closeMenu()" class="fas fa-times"></i>
+      </ul>
+      <i onclick="openMenu()" class="fas fa-bars"></i>
+    </nav>
+
+    <section id="product-details" class="section-product-1 container">
+      <div class="single-products-main-image">
+        <img
+          src="images/fiber-fun.png"
+          width="100%"
+          id="Main-image"
+          alt="product-image"
+        />
+        <div class="small-image-group">
+          <div class="small-image-col">
+            <img
+              src="images/fevicon.png"
+              width="100%"
+              class="small-image"
+              alt="product-image"
+            />
+          </div>
+          <div class="small-image-col">
+            <img
+              src="images/heroImage.png"
+              width="100%"
+              class="small-image"
+              alt="product-image"
+            />
+          </div>
+          <div class="small-image-col">
+            <img
+              src="images/Image-bg.jpg"
+              width="100%"
+              class="small-image"
+              alt="product-image"
+            />
+          </div>
+          <div class="small-image-col">
+            <img
+              src="images/fiber-fun.png"
+              width="100%"
+              class="small-image"
+              alt="product-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="single-product-details">
+        <h5>Home / Summer Craftify</h5>
+        <h3>A MERN Stack Project</h3>
+        <h5>build time 120 hours</h5>
+        <h5>App Details</h5>
+        <span
+          >This is a Summer School Project and Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Placeat corrupti aut odit. Iste odio
+          deserunt quibusdam provident consequuntur explicabo cumque illo,
+          deleniti rerum accusamus error harum corporis natus reiciendis iure
+          labore illum dignissimos porro nesciunt aut tempora. Quae ducimus
+          repudiandae accusamus natus adipisci quibusdam neque, tempore vel
+          similique impedit cum distinctio sint molestias hic magnam vitae,
+          aperiam magni in? Doloremque!</span
+        >
+        <br />
+        <button class="btn-2">Go Back to Home</button>
+      </div>
+    </section>
+
+    <div id="contacts">
+      <div class="container">
+        <div class="row">
+          <div class="contacts-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <div class="contacts-p">
+              <p><i class="fas fa-paper-plane"></i> kabirshuvo19@gmail.com</p>
+              <p><i class="fas fa-phone"></i> +8801717515631</p>
+            </div>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/kabirshuvo19/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/kabirshuvo"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a href="https://twitter.com/kabirshuvo19"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#"><i class="fab fa-google"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="gap"></div>
+            <a href="images/Resume-of-kabir-shuvo.pdf" download class="btn-2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contacts-right">
+            <form name="submit-to-google-sheet">
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your Name here"
+                required
+              />
+              <br />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email Please"
+                required
+              />
+              <br />
+              <textarea
+                name="Message"
+                rows="7"
+                placeholder="Your Message Here"
+              ></textarea>
+              <br />
+              <span id="message"></span>
+              <br />
+              <button class="btn-2" type="submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright @ Kabir Shuvo. All rights Reserved</p>
+      </div>
+    </div>
+    <!-- Image Display Script -->
+    <script>
+      let mainImage = document.getElementById("Main-image");
+      let smallImage = document.getElementsByClassName("small-image");
+
+      smallImage[0].onclick = function () {
+        mainImage.src = smallImage[0].src;
+      };
+      smallImage[1].onclick = function () {
+        mainImage.src = smallImage[1].src;
+      };
+      smallImage[2].onclick = function () {
+        mainImage.src = smallImage[2].src;
+      };
+      smallImage[3].onclick = function () {
+        mainImage.src = smallImage[3].src;
+      };
+    </script>
+    <!-- Contacts Message Script -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxAYD2zi1w_iUCTyIODwLKkuKlAAVKIwXYHDFx00QM4lqxPrMp_vpjptsQastVMQdyGUQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const message = document.getElementById("message");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            message.innerHTML = " Messange Sent Successfully";
+            setTimeout(function () {
+              message.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

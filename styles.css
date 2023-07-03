@@ -28,24 +28,6 @@ html {
   align-items: center;
 }
 
-#project-header {
-  width: 100%;
-  height: 100vh;
-  background-image: url(images/project_banner.png);
-  background-size: contain;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  position: relative;
-}
-#project-header background-image {
-  position: absolute;
-}
-#project-header h3 {
-  margin-top: 1%;
-  font-size: 3rem;
-  text-align: center;
-}
-
 #hero {
   display: flex;
   flex-direction: column;
