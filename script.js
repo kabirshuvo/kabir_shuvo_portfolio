@@ -1,7 +1,7 @@
 const animatedText = document.querySelector(".animated-text")
 
 
-const theBestMe = ["A GOAL SETTER...", "A Father...", "A Programer..."]
+const theBestMe = ["A GOAL SETTER.", "A Father ...", "A Learner ..."]
 
 let theBestMeIndex = 0;
 let characterIndex = 0;
