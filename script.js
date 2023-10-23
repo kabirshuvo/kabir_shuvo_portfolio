@@ -1,3 +1,32 @@
+// Hero Section Carusal
+let currentCard = 1;
+const cardCount = 3;
+const cardCarousel = document.querySelector(".card-carousel");
+const cards = document.querySelectorAll(".card");
+const buttons = document.querySelectorAll(".hero-btn");
+
+function changeCard(direction) {
+    cards[currentCard - 1].classList.remove("active");
+    currentCard += direction;
+    if (currentCard < 1) currentCard = cardCount;
+    if (currentCard > cardCount) currentCard = 1;
+    cards[currentCard - 1].classList.add("active");
+}
+
+function changeCardByIndex(cardIndex) {
+    cards[currentCard - 1].classList.remove("active");
+    currentCard = cardIndex;
+    cards[currentCard - 1].classList.add("active");
+}
+
+// Add event listeners to the buttons
+buttons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        changeCardByIndex(index + 1);
+    });
+});
+
+
 const animatedText = document.querySelector(".animated-text")
 
 
