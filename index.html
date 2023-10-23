@@ -40,6 +40,27 @@
     </nav>
     <header >
             <canvas id="canvas1"></canvas>
+            <div class="hero-content">
+              <div class="card-carousel">
+                  <div class="card">
+                      <img src="image1.jpg" alt="Card 1">
+                      <p>Text for Card 1</p>
+                      <button>Button 1</button>
+                  </div>
+                  <div class="card">
+                      <img src="image2.jpg" alt="Card 2">
+                      <p>Text for Card 2</p>
+                      <button>Button 2</button>
+                  </div>
+                  <div class="card">
+                      <img src="image3.jpg" alt="Card 3">
+                      <p>Text for Card 3</p>
+                      <button>Button 3</button>
+                  </div>
+              </div>
+              <button class="prev-button" onclick="changeCard(-1)">&#8249;</button>
+              <button class="next-button" onclick="changeCard(1)">&#8250;</button>
+          </div>
     
     </header>
 
@@ -50,7 +71,7 @@
           <div class="about-col-1">
             <div id="Slider">
               <div id="hero" class="hero-text">
-                <h3>The Word describes me best is <br /></h3>
+                <h3> Words describes me best is <br /></h3>
                 <div>
                   <p><span class="animated-text"></span></p>
                 </div>
@@ -66,7 +87,9 @@
             <h1 class="sub-title">About Me</h1>
             <p>
               Hi there, I'm kabir. React Web App developer. <br>
-              I manage my states with redux, I use Axios to fetch deta.
+              I manage my states with redux, I use Axios to fetch data.
+              I test with Jest and React Testing Library. 
+              Usually, I use Tailwind and Bootstrap as CSS library. 
             </p>
             <div class="tab-title">
               <p class="tab-links active-link" onclick="opentab('skills')">
@@ -80,44 +103,67 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>React web app developer</span><br />Developing Modern
-                  Web/App Interfaces
+                  <span>React web app developer</span><br />
+                  Developing Modern Web/App Interfaces. <br>
+                  Practicing Object Oriented Programming. 
                 </li>
                 <li>
-                  <span>SEO</span><br />Building Crawlable Website With
-                  Nextjs-13.4
+                  <span>Front-End</span><br />Figma, React, HTML5, CSS, JavaScript, React-Bootstrap, Tailwind-CSS. Headless-UI. Html-Canvas Animation, etc.
                 </li>
                 <li>
-                  <span>UI/UX Designer</span><br />Designing Modern Web/App
-                  Interfaces
+                  <span>Back-End</span><br />Firebase, Nodejs, Express, and MongoDB.
+                </li>
+                <li>
+                  <span>Tools and others:</span><br />Axios, Redux-toolkit, Tanstack-Query,
+                  and Framer-Motion. database Management, Documentation, TypeScript, NextJs, and others.
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="projects">
               <ul>
                 <li>
-                  <span>MERN Stack Project</span><br />Summer School Projects
+                  <span>CYCO.TV: (Team Project) </span><br />
+                  * Next-Gen OTT-platform. Great UX/UI with Excellent Dashboard Functionality. <br>
+                  * States managed with Redux-Toolkit, Fetched Data with Tanstack-Query. 
+                  * This was an 8-week team project. As an architect's decision, we decided to go with MERN Stack. Till Now we added almost 20-25 functionalities and some others are in progress. In this project, I added atleast 7 functionalities, fetched data with Axios, Managed states with Redux-toolkit and Tested components with Jest.
+                  * Github-Repo: Client-Repo 	Server-Repo
                 </li>
-                <li><span>MERN Project</span><br />A Complete Web app On</li>
+                <li><span>Summer Craftify:</span> Live-Site-Link<br />
+                  * A complete summer school web app
+                  * States managed with Redux-Toolkit, Fetched Data with Tanstack-Query. 
+                  * As an architect's decision, I decided to Use MERN Stack, I'm a pro to use this technology and its ecosystem. 
+                  * Added all majore functionalities and some others are in progress.
+                  * Fetched data with Axios, Managed states with Redux-Toolkit.
+                  * Github-Repo: Client-Repo 	Server-Repo
+
+                </li>
                 <li>
-                  <span>UI/UX Designer</span><br />Designing Modern Web/App
-                  Interfaces
+                  <span>Physics-BD</span><br /> 
+                  * Physics Focused Science Teaching Home web app.
+                  * Best teacher finding options and appionment reservation.
+                  * Seat Alocation.
+                  * Payment intrigation.
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>React web app developer</span><br />Developing Modern
-                  Web/App Interfaces
+                  <span>React Web App Developer || W3aSolutions && August 2022 - Present && Remote.</span><br />I'm working as a React Web App Developer at w3aSolutions on a contract basis. My primary role is writing project proposals for would-be clients and developing the first look of a web app. If we get the project approval then I lead my team until it is deliverable.
                 </li>
                 <li>
-                  <span>SEO</span><br />Building Crawlable Website With
-                  Nextjs-13.4
+                  <span>Technical Analyst cum Junior Executive || Amarstock, Dhaka || 2017-02 – 2020-04 || Onsite</span><br />I worked with Amarstock for 3 and a half years. In Amarstock I played a double role. My primary job was to train people how to use the amarstock.com web app and what they would get from that site. Besides this, I also worked as a junior executive, in administration.
+
                 </li>
                 <li>
-                  <span>UI/UX Designer</span><br />Designing Modern Web/App
-                  Interfaces
+                  <span>Education:</span><br />Bachelor of Social Science||Public Administration||University of Rajshahi. Bangladesh.	[2004-2008]
+                  
+                </li>
+                <li>
+                  <span>Certifications:</span><br />8 weeks BootCamp.								[2023-06 - 2023-07] <br>
+                  Complete Web Development Course at Programming Hero – [6months]  	[2023-01 - 2023-06] <br>
+                  Search Engine Optimization – [3months] 					[2017-01 - 2017-04]
+                  
                 </li>
               </ul>
             </div>
@@ -178,8 +224,7 @@
             <div class="layer">
               <h3>Summer Craftify</h3>
               <p>
-                summercraftify is a mernStack project. Discover The Details a
-                Github Reops.
+                summercraftify is a mernStack summer Camp project. Click to view details.
               </p>
               <a href="singleproduct1.html"><i class="fas fa-crop-alt"></i></a>
             </div>
@@ -210,6 +255,8 @@
         <a class="btn" href="projects.html">See More projects</a>
       </div>
     </div>
+
+
 
     <!-- Contacts -->
     <div id="contacts">
