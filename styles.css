@@ -95,6 +95,7 @@ html {
   align-items: center;
   transition: transform 0.5s;
   display: none;
+ 
 }
 .card.active {
   display: flex;
@@ -111,8 +112,33 @@ html {
 }
 
 .card img {
-  max-width: 100%;
-  min-width: 40px;
+  width: 150px;
+  border-radius: 50%;
+}
+.hero-card-text {
+  max-width: 50%;
+  background-color: #001e36;
+  opacity: 60%;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.hero-card-text:hover{
+  opacity: 90%;
+}
+.card-main-text {
+  color: #007BFF; 
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  padding: 1rem;
+  font-size: 2rem;
+}
+.card p {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+
 }
 
 .prev-button,
