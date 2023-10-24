@@ -38,7 +38,7 @@ html {
   text-align: left;
 }
 #hero .animated-text {
-  /* margin-top: 3rem; */
+  margin-top: .3rem;
 }
 #hero h3 {
   color: #31a8ff;
@@ -56,7 +56,7 @@ html {
   font-size: 1rem;
 }
 #hero a {
-  /* margin-top: 3rem; */
+  margin-top: .3rem;
 }
 #canvas1 {
   position: absolute;
@@ -118,12 +118,12 @@ html {
 .hero-card-text {
   max-width: 50%;
   background-color: #001e36;
-  opacity: 60%;
+  opacity: 80%;
   border-radius: 1rem;
   padding: 1rem;
 }
 .hero-card-text:hover{
-  opacity: 90%;
+  opacity: 96%;
 }
 .card-main-text {
   color: green; 
@@ -143,6 +143,13 @@ html {
   padding-bottom: 1rem;
   font-size: 1rem;
 
+}
+.projects-and-codebase {
+  margin-top: .5rem;
+}
+.projects-and-codebase a {
+  direction: none; 
+  color: #007BFF;
 }
 
 .prev-button,
