@@ -126,14 +126,18 @@ html {
   opacity: 90%;
 }
 .card-main-text {
-  color: #007BFF; 
-  font-size: 1.1rem;
+  color: green; 
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .card h3 {
   padding: 1rem;
   font-size: 2rem;
+}
+.card h5 {
+  padding-top: .4rem;
+  padding-bottom: -.4rem;
 }
 .card p {
   padding-bottom: 1rem;
