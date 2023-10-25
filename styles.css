@@ -9,7 +9,7 @@
 
 body {
   background: black;
-  opacity: 80%;
+  /* opacity: 80%; */
   color: #31a8ff;
   margin: 0;
   
@@ -40,6 +40,7 @@ html {
 #hero .animated-text {
   margin-top: .3rem;
 }
+
 #hero h3 {
   color: #31a8ff;
   /* margin-top: 20%; */
@@ -51,9 +52,8 @@ html {
   /* margin-top: 1rem; */
 }
 #hero p {
-  color: #001e36;
-  /* margin-top: 2rem; */
-  font-size: 1rem;
+  color: #001;
+  
 }
 #hero a {
   margin-top: .3rem;
@@ -102,7 +102,7 @@ html {
 }
 .card button {
   margin-right: 1rem;
-  background: #007BFF;
+  background: #000;
   color: #fff;
   font-size: 11px;
   border: none;
@@ -117,7 +117,7 @@ html {
 }
 .hero-card-text {
   max-width: 50%;
-  background-color: #001e36;
+  background-color: #001;
   opacity: 80%;
   border-radius: 1rem;
   padding: 1rem;
@@ -142,7 +142,10 @@ html {
 .card p {
   padding-bottom: 1rem;
   font-size: 1rem;
-
+}
+.card-li {
+  display: flex;
+  list-style-type: none;
 }
 .projects-and-codebase {
   margin-top: .5rem;
@@ -519,7 +522,7 @@ form textarea {
   width: 100%;
   text-align: center;
   padding: 1rem 0;
-  background: #18152e;
+  background: #001;
   font-weight: 400;
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -537,6 +540,143 @@ form textarea {
 
 nav .fas {
   display: none;
+}
+@media only screen and (max-width: 500px) {
+
+  #Slider {
+    height: 40vh;
+   
+  }
+  #hero h1{
+    font-size: 2rem;
+  }
+
+  .card-carousel {
+    height: 80%;
+  }
+
+  .hero-card-text {
+    max-width: 95%;
+  }
+  .prev-button,
+.next-button {
+ display: none;
+
+}
+
+
+.card-main-text {
+  color: green; 
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.card h3 {
+  padding: .6rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  padding-bottom: .6rem;
+  font-size: .8rem;
+}
+
+  nav .fas {
+    display: block;
+    font-size: 1rem;
+  }
+
+  nav ul {
+    background: #001e36;
+    position: fixed;
+    top: 0;
+    left: -220px;
+    width: 220px;
+    height: 100vh;
+    padding-top: 3rem;
+    z-index: 10;
+    transition: left 0.4s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 1.5rem;
+  }
+
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  #header {
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  #hero {
+    margin-left: 5%;
+  }
+
+  #hero h3 {
+    font-size: 1rem;
+   padding-bottom: 1.4rem;
+   margin-top: .1rem;
+    
+  }
+  #hero h2 {
+    font-size: 1rem;
+    padding-top: 1.4rem;
+    
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: -2rem;
+  }
+ 
+  #hero a {
+    margin-top: -2.5%;
+  }
+
+  .sub-title {
+    font-size: 2rem;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 {
+    margin-bottom: -2rem;
+  }
+  #about {
+    padding: 0 0;
+    color: #ababab;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .tab-links {
+    font-size: 1rem;
+    margin-right: 1rem;
+    color: #fff;
+  }
+
+  .contacts-left,
+  .contacts-right {
+    flex-basis: 100%;
+  }
+  .contacts-left {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav .fas {
@@ -625,3 +765,5 @@ nav .fas {
     margin-bottom: 2rem;
   }
 }
+
+

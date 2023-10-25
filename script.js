@@ -30,7 +30,7 @@ buttons.forEach((button, index) => {
 const animatedText = document.querySelector(".animated-text")
 
 
-const theBestMe = ["Innovator ...", "Problem-Solver ...", "Collaborator ..."]
+const theBestMe = ["Innovator ...", "Error-Handler ...", "Collaborator ..."]
 
 let theBestMeIndex = 0;
 let characterIndex = 0;
@@ -50,7 +50,7 @@ function updatetheBestMeText(){
     if(theBestMeIndex === theBestMe.length){
         theBestMeIndex = 0
     }
-    setTimeout(updatetheBestMeText, 100)
+    setTimeout(updatetheBestMeText, 200)
 }
 
 // Canvas Animation
